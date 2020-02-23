@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: white;
+  color: white;
+}
+.decoration{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vw;
+  background: linear-gradient(0deg, rgba(35,26,203,1), rgba(35,26,188,0));
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+#blured{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38vw;
+  height: 38vw;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+#infoholder{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18vw;
+  height: 18vw;
+  background-color: rgba(35,26,203,1);
+  border-radius: 50%;
+  color: #F2F2F2;
+  text-align: center;
+}
+.knapp{
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid rgba(35,26,203,1);
+  width: 5vw;
+  height: 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(35,26,203,1);
+  box-sizing: border-box;
+  font-size: 3em;
+}
+#link1{
+  transform: translate(-300%, -50%);
+  animation: knappmove1 .8s linear;
+}
+#link2{
+  transform: translate(-200%, 150%);
+  animation: knappmove2 .8s linear;
+}
+#link3{
+  transform: translate(100%, 150%);
+  animation: knappmove3 .8s linear;
+}
+#link4{
+  transform: translate(200%, -50%);
+  animation: knappmove4 .8s linear;
+}
+.knapp:hover{
+  box-shadow: 0 .4vh 1vh rgba(35,26,203,.5);
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes knappmove4 {
+  from {transform: translate(-50%, -50%);}
+  to {transform: translate(200%, -50%);}
+}
+@keyframes knappmove3 {
+  from {transform: translate(-50%, -50%);}
+  to {transform: translate(100%, 150%);}
+}
+@keyframes knappmove2 {
+  from {transform: translate(-50%, -50%);}
+  to {transform: translate(-200%, 150%);}
+}
+@keyframes knappmove1 {
+  from {transform: translate(-50%, -50%);}
+  to {transform: translate(-300%, -50%);}
+}
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
